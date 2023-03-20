@@ -1,20 +1,25 @@
 {
-  "name": "chessonnext",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@types/node": "18.15.5",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.0.2"
-  }
+	"name": "chessonnext",
+	"author": "Evgeniy Datskiy",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@types/node": "18.15.5",
+		"@types/react": "18.0.28",
+		"@types/react-dom": "18.0.11",
+		"next": "13.2.4",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"typescript": "5.0.2"
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^4.1.1",
+		"prettier": "^2.8.5"
+	}
 }
