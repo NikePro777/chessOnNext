@@ -9,7 +9,7 @@ const Layout: React.FC = ({ children }) => {
 		<div className={styles.layout}>
 			<h1>Layout</h1>
 			<Navigation />
-			<div className={styles.center}>child {children} child2</div>
+			<div className={styles.center}>!!! {children} !!!</div>
 			<main>{children}</main>
 			<Sidebar />
 		</div>
