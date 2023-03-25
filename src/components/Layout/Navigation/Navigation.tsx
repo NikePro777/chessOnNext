@@ -6,9 +6,13 @@ import styles from './Navigation.module.scss'
 
 const Navigation: React.FC = () => {
 	return (
-		<div className="navbar">
-			<Logo />
-			<MenuContainer />
+		<div className="container">
+			<div className={styles.navbar}>
+				<Logo />
+				<nav>
+					<MenuContainer />
+				</nav>
+			</div>
 		</div>
 	)
 }

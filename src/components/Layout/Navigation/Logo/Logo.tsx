@@ -1,9 +1,10 @@
+import styles from './Logo.module.scss'
+
 const Logo: React.FC = () => {
 	return (
-		<div className='logo'>
-			<a className='logo__link' href='./index.html'>
-				{' '}
-				ШахМатOff{' '}
+		<div className={styles.logo}>
+			<a className={styles.logo__link} href="./index.html">
+				ШахМатOff
 			</a>
 		</div>
 	)
