@@ -10,6 +10,13 @@ const Layout: React.FC = ({ children }) => {
 			<h1>Layout</h1>
 			<Navigation />
 			<div className={styles.center}>!!! {children} !!!</div>
+		<div className="wrapper">
+			<header>
+				<div className="header">
+					<Navigation />
+				</div>
+			</header>
+			<div className={styles.center}>child {children} child2</div>
 			<main>{children}</main>
 			<Sidebar />
 		</div>
