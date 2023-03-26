@@ -1,6 +1,8 @@
 import { FC } from 'react'
 
-const Menu: FC = () => {
+import { IMenu } from './menu.interface'
+
+const Menu: FC<{ menu: IMenu }> = ({ menu }) => {
 	return <div>menu</div>
 }
 

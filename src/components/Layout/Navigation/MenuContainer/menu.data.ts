@@ -1,5 +1,3 @@
-import { Link } from 'next/link'
-
 import { IMenu } from './menu.interface'
 
 const firstMenu: IMenu = {
