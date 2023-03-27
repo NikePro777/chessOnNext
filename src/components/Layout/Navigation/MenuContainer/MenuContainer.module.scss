@@ -1,3 +1,156 @@
-.navbar {
-	background-color: red;
+@import '../../../../assets/styles/_vars';
+
+.menu {
+	display: flex;
+	// gap: 10px;
+
+	&__item {
+		display: flex;
+		position: relative;
+		padding: 8px 15px;
+		border-radius: 0 5px 0 5px;
+		color: $color-text-primary;
+
+		&:hover {
+			background: $color-accent;
+			transition: 0.2s all;
+			color: $color-text-secondary;
+		}
+	}
+
+	&__item-link {
+		color: inherit;
+		font-size: 16px;
+		line-height: 1.1;
+		font-weight: 500;
+		display: flex;
+		position: relative;
+		transition: 0.2s color;
+
+		&:hover {
+			color: inherit;
+		}
+
+		@media (max-width: $breakpoint992) {
+			font-size: 20px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+	}
+
+	.dropdown-list {
+		position: relative;
+		z-index: 20;
+
+		@media (min-width: $breakpoint992) {
+			padding-right: 35px;
+			border-radius: 0 5px 0 0;
+
+			&::after {
+				position: absolute;
+				content: '';
+				top: 15px;
+				right: 10px;
+				height: 2px;
+				width: 10px;
+				background: $color-text-primary;
+				transform: rotate(-45deg);
+			}
+
+			&::before {
+				position: absolute;
+				content: '';
+				top: 15px;
+				right: 16px;
+				height: 2px;
+				width: 10px;
+				background: $color-text-primary;
+				transform: rotate(45deg);
+			}
+
+			&:hover {
+				.dropdown-list__items {
+					display: block;
+				}
+			}
+		}
+
+		&__items {
+			display: none;
+
+			bottom: 0px;
+			left: 0px;
+			transform: translateY(100%);
+			position: absolute;
+			background: $color-bg-dark-300;
+			width: 210px;
+			padding: 25px 15px;
+			border-radius: 0 0 10px 10px;
+			transition: 2s ease all;
+		}
+
+		&__item {
+			padding: 5px 3px;
+
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+		}
+
+		&__link {
+			color: $color-text-primary;
+
+			&:hover {
+				color: $color-accent;
+				text-decoration: underline;
+				transition: 0.2s all;
+			}
+		}
+	}
+
+	&__item-contacts {
+		margin-top: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		gap: 15px;
+
+		@media (min-width: $breakpoint992) {
+			display: none;
+		}
+	}
+	&__item-tell {
+		font-family: 'Roboto', sans-serif;
+		font-size: 26px;
+		line-height: 1.6;
+		font-weight: 300;
+		color: $color-text-primary;
+	}
+
+	//Mobile menu styles
+
+	@media screen and (max-width: $burgerBreakpoint) {
+		position: fixed;
+		background: #133;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		width: 100vh;
+		display: none;
+		z-index: 20;
+
+		&.active {
+			display: flex;
+			left: 0;
+			right: 0;
+			height: 100vh;
+			width: 100%;
+			flex-direction: column;
+			pointer-events: all;
+			justify-content: center;
+			align-items: center;
+			animation: fade 0.1s linear;
+		}
+	}
 }
