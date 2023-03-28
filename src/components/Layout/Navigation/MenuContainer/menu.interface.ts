@@ -6,5 +6,5 @@ export interface IMenuItem {
 export interface IMenu {
 	title: string
 	link?: string
-	items?: IMenuItem[]
+	items: IMenuItem[]
 }

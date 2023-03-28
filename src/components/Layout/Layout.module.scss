@@ -1,11 +1,15 @@
-.header {
-	background: #202328;
+@import '../../assets/styles/vars';
 
-	// position: fixed;
-	// left: 0;
-	// right: 0;
-	// top: 0;
-	// z-index: 99;
+.header {
+	background: $color-bg-dark-300;
+
+	@media (min-width: $breakpoint992) {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: 99;
+	}
 
 	&.fixed {
 		position: fixed;

@@ -27,9 +27,5 @@ export const firstMenu: IMenu = {
 			title: 'Контакты',
 			link: '/',
 		},
-		{
-			title: 'Тренеры',
-			link: '/',
-		},
 	],
 }

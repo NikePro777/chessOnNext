@@ -1,3 +1,5 @@
+const path = require('path')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	poweredByHeader: false,
@@ -20,3 +22,9 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+// module.exports = {
+// 	sassOptions: {
+// 		includePaths: [path.join(__dirname, 'src/assets/styles')],
+// 	},
+// 	nextConfig,
+// }

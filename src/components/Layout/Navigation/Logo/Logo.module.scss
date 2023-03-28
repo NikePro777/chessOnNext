@@ -1,8 +1,9 @@
+@import '../../../../assets/styles/vars';
 .logo {
 	z-index: 21;
 
 	&__link {
-		color: rgb(255, 186, 0);
+		color: $color-accent;
 		font-family: 'Roboto', sans-serif;
 		font-size: 24px;
 	}

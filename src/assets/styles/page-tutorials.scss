@@ -1,0 +1,88 @@
+.page-tutorials {
+    &__wrapper {
+    }
+    &__title {
+
+        @media (max-width: $breakpoint768) {
+            font-size: 16px;
+        }
+    }
+    &__content {
+    }
+    &__items {
+        margin-top: 30px;
+    }
+    &__items-item {
+    }
+    &__item-link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.7;
+        color: $color-text-primary;
+
+        &:hover {
+            transition: 0.3s all ease;
+
+            color: $color-accent;
+        }
+
+        @media (max-width: $breakpoint768) {
+            font-size: 12px;
+        }
+    }
+
+    &__content {
+        margin-top: 30px;
+    }
+    &__video {
+        display: flex;
+        justify-content: center;
+    }
+    &__video iframe {
+        max-width: 780px;
+
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    &__text {
+        padding-top: 30px;
+
+        @media (max-width: $breakpoint768) {
+            font-size: 12px;
+        }
+        a {
+            color: $color-accent;
+            font-weight: 500;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.lessons-nav {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    &__link {
+        display: block;
+        text-decoration: underline;
+        color: $color-text-primary;
+
+        @media (max-width: $breakpoint768) {
+            font-size: 12px;
+        }
+
+        &:hover {
+            color: $color-accent;
+            transition: 0.3s all ease;
+        }
+    }
+
+    &__link--right {
+        margin-left: auto;
+    }
+}

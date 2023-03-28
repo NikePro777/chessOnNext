@@ -1,6 +1,10 @@
+// @import '../../../assets/styles/global';
+// @import './head.scss';
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 0;
+	height: 75px;
 }
