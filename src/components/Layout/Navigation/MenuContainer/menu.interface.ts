@@ -1,10 +1,15 @@
-export interface IMenuItem {
-	title: string
-	link: string
-}
-
 export interface IMenu {
 	title: string
-	link?: string
-	items: IMenuItem[]
+	items: IMenuDrop[]
+}
+
+export interface IMenuDrop {
+	title: string
+	link: string
+	dropMenu?: IMenuDropItem[]
+}
+
+export interface IMenuDropItem {
+	title: string
+	link: string
 }

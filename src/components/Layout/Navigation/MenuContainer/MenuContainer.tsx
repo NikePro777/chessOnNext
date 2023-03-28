@@ -5,6 +5,7 @@ import MenuItem from './MenuItem'
 import { firstMenu } from './menu.data'
 
 const MenuContainer: FC = () => {
+	// const menu = firstMenu
 	const menu = firstMenu
 	return (
 		<ul className={styles.menu}>
