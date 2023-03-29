@@ -8,7 +8,7 @@ const MenuContainer: FC = () => {
 	return (
 		<ul className={styles.menu}>
 			{firstMenu.items.map((item) => (
-				<MenuItem item={item} key={item.link} />
+				<MenuItem {...item} key={item.link} />
 			))}
 		</ul>
 	)
