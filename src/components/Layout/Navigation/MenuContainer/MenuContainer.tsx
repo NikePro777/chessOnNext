@@ -5,14 +5,10 @@ import MenuItem from './MenuItem'
 import { firstMenu } from './menu.data'
 
 const MenuContainer: FC = () => {
-	// const menu = firstMenu
-	const menu = firstMenu
 	return (
 		<ul className={styles.menu}>
-			{menu.items.map((item) => (
-				<li className={styles.menu__item}>
-					<MenuItem item={item} key={item.link} />
-				</li>
+			{firstMenu.items.map((item) => (
+				<MenuItem item={item} key={item.link} />
 			))}
 		</ul>
 	)

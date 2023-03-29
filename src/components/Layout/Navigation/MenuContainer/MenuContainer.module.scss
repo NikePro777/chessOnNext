@@ -89,24 +89,6 @@
 			border-radius: 0 0 10px 10px;
 			transition: 2s ease all;
 		}
-
-		&__item {
-			padding: 5px 3px;
-
-			&:not(:last-child) {
-				margin-bottom: 5px;
-			}
-		}
-
-		&__link {
-			color: $color-text-primary;
-
-			&:hover {
-				color: $color-accent;
-				text-decoration: underline;
-				transition: 0.2s all;
-			}
-		}
 	}
 
 	&__item-contacts {
@@ -127,8 +109,6 @@
 		line-height: 1.6;
 		font-weight: 300;
 		color: $color-text-primary;
-	}
-	&__item-btn {
 	}
 
 	//Mobile menu styles

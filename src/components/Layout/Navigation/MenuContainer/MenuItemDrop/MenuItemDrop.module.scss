@@ -1,0 +1,20 @@
+@import '../../../../../assets/styles/vars';
+.dropdown_list {
+	&__item {
+		padding: 5px 3px;
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__link {
+		color: $color-text-primary;
+
+		&:hover {
+			color: $color-accent;
+			text-decoration: underline;
+			transition: 0.2s all;
+		}
+	}
+}
