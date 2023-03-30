@@ -1,11 +1,13 @@
+import Link from 'next/link'
+
 import styles from './Logo.module.scss'
 
 const Logo: React.FC = () => {
 	return (
 		<div className={styles.logo}>
-			<a className={styles.logo__link} href="./index.html">
+			<Link className={styles.logo__link} href="./">
 				ШахМатOff
-			</a>
+			</Link>
 		</div>
 	)
 }

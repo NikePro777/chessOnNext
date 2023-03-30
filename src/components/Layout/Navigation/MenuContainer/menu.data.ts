@@ -53,7 +53,7 @@ export const firstMenu: IMenu = {
 		},
 		{
 			title: 'Контакты',
-			link: '/',
+			link: '/about',
 		},
 	],
 }

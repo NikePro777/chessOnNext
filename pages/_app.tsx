@@ -13,6 +13,11 @@ export default function App({ Component, pageProps }: AppProps) {
 		// 	</style>
 		<Layout>
 			<Component {...pageProps} />
+			<style jsx global>{`
+				main {
+					margin-top: 75px;
+				}
+			`}</style>
 		</Layout>
 		// </>
 	)
