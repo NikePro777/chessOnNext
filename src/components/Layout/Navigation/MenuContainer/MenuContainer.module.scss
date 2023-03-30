@@ -78,7 +78,6 @@
 
 		&__items {
 			display: none;
-
 			bottom: 0px;
 			left: 0px;
 			transform: translateY(100%);
@@ -88,6 +87,24 @@
 			padding: 25px 15px;
 			border-radius: 0 0 10px 10px;
 			transition: 2s ease all;
+		}
+
+		&__item {
+			padding: 5px 3px;
+
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+		}
+
+		&__link {
+			color: $color-text-primary;
+
+			&:hover {
+				color: $color-accent;
+				text-decoration: underline;
+				transition: 0.2s all;
+			}
 		}
 	}
 

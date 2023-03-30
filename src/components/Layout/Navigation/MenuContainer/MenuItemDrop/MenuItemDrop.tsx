@@ -1,27 +1,22 @@
 import Link from 'next/link'
-import { title } from 'process'
-import { FC } from 'react'
 
+import styles from '../MenuContainer.module.scss'
 import { IMenuDropItem } from '../menu.interface'
 
-import styles from './MenuItemDrop.module.scss'
-import MenuItemDropik from './MenuItemDropik'
-
-interface MenuItemDropInterface {
-	dropMenu: IMenuDropItem[]
+interface Drop {
+	dropMenu: { title: string; link: string }
 }
-
-const MenuItemDrop: FC<MenuItemDropInterface> = ({ dropMenu }) => {
+const MenuItemDrop: React.FC<Drop> = ({ dropMenu }) => {
 	return (
-		<>
-			{dropMenu.map((drop) => {
-				;<li className={styles.dropdown_list__item}>
-					<Link href={drop.link} className={styles.dropdown_list__link}>
-						{drop.title}
-					</Link>
-				</li>
-			})}
-		</>
+		<li className={styles.dropdown_list__item}>
+			<Link
+				href={dropMenu.link}
+				className={styles.dropdown_list__link}
+				key={dropMenu.title}
+			>
+				{dropMenu.title}
+			</Link>
+		</li>
 	)
 }
 

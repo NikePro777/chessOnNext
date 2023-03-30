@@ -40,6 +40,16 @@ export const firstMenu: IMenu = {
 		{
 			title: 'Стоимость',
 			link: '/',
+			dropMenu: [
+				{
+					title: 'Тихвинъ',
+					link: '/',
+				},
+				{
+					title: 'Авиационная',
+					link: '/',
+				},
+			],
 		},
 		{
 			title: 'Контакты',
