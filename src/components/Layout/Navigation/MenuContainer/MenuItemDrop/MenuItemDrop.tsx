@@ -12,11 +12,17 @@ interface MenuItemDropInterface {
 }
 
 const MenuItemDrop: FC<MenuItemDropInterface> = ({ dropMenu }) => {
-	return dropMenu.map((drop) => {
-		;<li className={styles.dropdown_list__item} key={drop.title}>
-			<MenuItemDropik />
-		</li>
-	})
+	return (
+		<>
+			{dropMenu.map((drop) => {
+				;<li className={styles.dropdown_list__item}>
+					<Link href={drop.link} className={styles.dropdown_list__link}>
+						{drop.title}
+					</Link>
+				</li>
+			})}
+		</>
+	)
 }
 
 export default MenuItemDrop
