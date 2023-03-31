@@ -12,6 +12,9 @@ const Navigation: React.FC = () => {
 				<nav>
 					<MenuContainer />
 				</nav>
+				<button className={styles.burger}>
+						<span></span>
+					</button>
 			</div>
 		</div>
 	)

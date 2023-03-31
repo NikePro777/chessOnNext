@@ -1,5 +1,4 @@
-// @import '../../../assets/styles/global';
-// @import './head.scss';
+@import '../../../assets/styles/vars';
 
 .navbar {
 	display: flex;
@@ -7,4 +6,67 @@
 	align-items: center;
 	padding: 20px 0;
 	height: 75px;
+}
+
+//Burger style
+.burger {
+	display: none;
+	background: transparent;
+	z-index: 20;
+
+	@media screen and (max-width: $burgerBreakpoint) {
+		display: flex;
+		position: relative;
+		height: 20px;
+		width: 30px;
+
+		&.active {
+			&::before {
+				background: $burgerActiveColor;
+				transform: rotate(45deg);
+				transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+				top: 8px;
+			}
+
+			&:after {
+				background: $burgerActiveColor;
+				transform: rotate(-45deg);
+				transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+				bottom: 10px;
+			}
+
+			& span {
+				transform: scale(0);
+			}
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			background: $burgerColor;
+			transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		span {
+			position: absolute;
+			top: 9px;
+			right: 0;
+			width: 100%;
+			background: $burgerColor;
+			height: 2px;
+			transform: scale(1);
+			transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+		}
+	}
 }
