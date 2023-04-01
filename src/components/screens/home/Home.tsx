@@ -1,14 +1,9 @@
 import { FC } from 'react'
 
-import { IHome } from './home.interface'
+import Banner from './banner/banner'
 
-const Home: FC<IHome> = () => {
-	return (
-		<>
-			<h1>Home который я поместил в индекс </h1>
-			<p>src/components/screens/home/home</p>
-		</>
-	)
+const Home: FC = () => {
+	return <Banner />
 }
 
 export default Home
