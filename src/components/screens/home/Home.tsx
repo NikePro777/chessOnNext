@@ -1,12 +1,15 @@
 import { FC } from 'react'
 
 import Banner from './banner/banner'
-import Swiper from './swiper/swiper'
+import Fill from './swiper/fill'
+import SwiperSection from './swiper/swiperSection'
 
 const Home: FC = () => {
 	return (
 		<>
-			<Banner /> <Swiper />
+			<Banner />
+			<SwiperSection />
+			{/* <Fill /> */}
 		</>
 	)
 }

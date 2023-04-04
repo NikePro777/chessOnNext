@@ -1,6 +1,7 @@
-.sub-head {
-	// padding-bottom: 50px;
+@import '../../../../assets/styles/vars';
 
+.sub_head {
+	// padding-bottom: 50px;
 	// background: #2d3038;
 	position: relative;
 	// z-index: -1;
@@ -47,12 +48,8 @@
 		opacity: 1;
 	}
 }
-.swiper {
-}
-.swiper-wrapper {
-}
 
-.swiper-slide {
+.swiper_slide {
 	img {
 		object-fit: cover;
 		width: 100%;
